@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="keywords" content="Oprah, like, hello">
+
+<meta name="decription" content="Simple front-end project.">
+
+<meta name="author" content="Zy K">
+
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+<title>Keerthi Likes You. And so do other people.</title>
+
+<style>
+
+/* Basic CSS comment */
+
+body {
+
+background: #BBB;
+
+color: black;
+
+width: 960px;
+
+margin: 0 auto;
+
+}
+
+h1 {
+
+font-size: 100px;
+
+color: #333;
+
+}
+
+</style>
+
+    <script>
+
+// First type of comment
+
+/* Second type */
+
+// alert("I'm annoying!");
+
+// document.write("<h1>Hello!!</h1>");
+
+var username = prompt("Hello! Whats is your name?");
+
+var text = "";
+
+var car = new Array("BMW", "Benz", "Audi");
+
+var carPictures = new Array("bmw2.jpg", "benz2.jpg", "audi2.jpg");
+
+var win = false;
+
+var randomCar = Math.floor(Math.random()*carPictures.length);
+
+if (username === "naveen" || username === "uvaise" || username === "kaavya" || username === "sindhuja" || username === "sharique") {
+
+text = "<h1>Hello " + username + "! You are awesome!! So you get a " + car[randomCar] + "!!!</h1>";
+
+win = true;
+
+} else {
+
+text = "<h1>Hello " + username + "!</h1>";
+
+}
+
+document.write(text);
+
+if (win) {
+
+document.write("<img src=\"" + carPictures[randomCar] + "\">");
+
+}
+
+    </script>
+
+</head>
+
+<body>
+
+<!--
+
+Use img with width and height, as web browser will be able to
+
+optimize better.
+
+<img src="myphoto.jpg" width="234" height="123">
+
+Use non-breaking space (&nbsp;) for keeping words together
+
+<p>The quick brown&nbsp;fox</p>
+
+!-->
+
+<img src="images\Keerthi.jpg" width="595" height="800">
+
+</body>
+
+</html>
